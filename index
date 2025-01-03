@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa de Turismo - Ingeniera WEB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #14b8f3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #133ecd;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            margin-top: 0;
+        }
+        .btn-group {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button.add {
+            background-color: #28a745;
+            color: white;
+        }
+        button.edit {
+            background-color: #ffc107;
+            color: black;
+        }
+        button.delete {
+            background-color: #dc3545;
+            color: white;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+        }
+        .search-bar input, .search-bar select {
+            padding: 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .search-bar button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Empresa de Turismo - Ingeniera WEB</h1>
+    </header>
+    <nav>
+        <a href="#destinos">Destinos Turísticos</a>
+        <a href="#paquetes">Paquetes de Viajes</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#actividades">Actividades</a>
+        <a href="#reservas">Reservas</a>
+        <a href="#perfil">Perfil de Usuario</a>
+    </nav>
+    <main>
+        <section class="search-bar">
+            <h2>Buscador Avanzado</h2>
+            <input type="text" placeholder="Buscar destinos, paquetes...">
+            <select>
+                <option value="location">Ubicación</option>
+                <option value="price">Precio</option>
+                <option value="activity">Actividades</option>
+                <option value="date">Fechas</option>
+                <option value="rating">Valoraciones</option>
+            </select>
+            <button>Buscar</button>
+        </section>
+        <section id="destinos">
+            <h2>Destinos Turísticos</h2>
+            <div class="btn-group">
+                <button class="add">Cargar</button>
+                <button class="edit">Editar</button>
+                <button class="delete">Eliminar</button>
+            </div>
+        </section>
+        <section id="paquetes">
+            <h2>Paquetes de Viajes</h2>
+            <div class="btn-group">
+                <button class="add">Cargar</button>
+                <button class="edit">Editar</button>
+                <button class="delete">Eliminar</button>
+            </div>
+        </section>
+        <section id="eventos">
+            <h2>Eventos</h2>
+            <div class="btn-group">
+                <button class="add">Cargar</button>
+                <button class="edit">Editar</button>
+                <button class="delete">Eliminar</button>
+            </div>
+        </section>
+        <section id="actividades">
+            <h2>Actividades</h2>
+            <div class="btn-group">
+                <button class="add">Cargar</button>
+                <button class="edit">Editar</button>
+                <button class="delete">Eliminar</button>
+            </div>
+        </section>
+        <section id="reservas">
+            <h2>Sistema de Reservas</h2>
+            <p>Reserva hoteles, actividades y tours con opciones de pago en línea.</p>
+            <button>Realizar Reserva</button>
+        </section>
+        <section id="opiniones">
+            <h2>Sistema de Opiniones y Valoraciones</h2>
+            <p>Escribe opiniones y califica destinos, tours y servicios con un sistema de estrellas.</p>
+            <button>Dejar Opinión</button>
+        </section>
+        <section id="perfil">
+            <h2>Perfil de Usuario</h2>
+            <p>Regístrate, crea un perfil personal y guarda tus preferencias, destinos favoritos y reservas previas.</p>
+            <button>Registrarse/Iniciar Sesión</button>
+        </section>
+    </main>
+</body>
+</html>
